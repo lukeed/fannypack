@@ -2,6 +2,7 @@
   "name": "fannypack",
   "version": "0.9.0",
   "description": "The tool belt for front-end developers",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "deploy": "gulp deploy",
@@ -11,6 +12,25 @@
     "watch": "gulp webpack:watch watch",
     "test": "gulp build:production && karma start --single-run"
   },
+  "author": {
+    "name": "Luke Edwards",
+    "email": "luke@lukeed.com",
+    "url": "http://www.lukeed.com"
+  },
+  "tags": [
+    "build",
+    "stream",
+    "make",
+    "tool",
+    "toolkit",
+    "asset",
+    "pipeline",
+    "front-end",
+    "gulp",
+    "webpack",
+    "babel",
+    "sass"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lukeed/fannypack.git"
