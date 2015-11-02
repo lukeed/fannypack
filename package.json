@@ -55,7 +55,6 @@
     "gulp-iconfont": "^3.0.3",
     "gulp-if": "~1.2.5",
     "gulp-imagemin": "^2.3.0",
-    "gulp-insert": "^0.5.0",
     "gulp-minify-css": "^1.2.0",
     "gulp-notify": "^2.2.0",
     "gulp-nunjucks-render": "^0.2.1",
@@ -63,7 +62,6 @@
     "gulp-rev": "^5.1.0",
     "gulp-rev-napkin": "^0.1.0",
     "gulp-rev-replace": "^0.4.2",
-    "gulp-riot": "^0.2.17",
     "gulp-sass": "^2.0.4",
     "gulp-sequence": "^0.4.0",
     "gulp-sizereport": "^1.1.2",
@@ -90,5 +88,15 @@
     "require-dir": "^0.3.0",
     "vinyl-source-stream": "~1.1.0",
     "webpack": "^1.10.1"
-  }
+  },
+  "readme": "# fannypack\nThe tool belt for front-end developers\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/lukeed/fannypack/issues"
+  },
+  "homepage": "https://github.com/lukeed/fannypack#readme",
+  "_id": "fannypack@0.1.0",
+  "_shasum": "3dffe9363617c1ea773e76f33bbdf0abf1e422b6",
+  "_resolved": "file:../fannypack/fannypack-0.1.0.tgz",
+  "_from": "fannypack@>=0.1.0 <0.2.0"
 }
