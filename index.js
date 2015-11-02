@@ -7,13 +7,22 @@
   automatically required below.
 */
 
-var config = require('./-config')
+var Fannypack = {}
+Fannypack.Config = require('./-config')
+Fannypack.Tasks = require('require-dir')('./tasks', {recurse: true})
 
-var init = function(customize){
-  config = customize(config)
-  // Require all tasks in /tasks, including subfolders
-  require('require-dir')('./tasks', { recurse: true })
+function runAllTasks(object, config) {
+  for (var name in object) {
+    if (typeof object[name] === 'function') {
+      object[name](config)
+    } else if (typeof object[name] === 'object') {
+      runAllTasks(object[name], config)
+    }
+  }
 }
 
-exports.config = config
-exports.init = init
+Fannypack.init = function(){
+  return runAllTasks(this.Tasks, this.Config)
+}
+
+module.exports = Fannypack

@@ -14,13 +14,6 @@ module.exports = {
       extensions: ['js']
     },
 
-    tags: {
-      src: 'tags',
-      dest: 'js', // src /js
-      output: '-templates.js',
-      extensions: ['tag']
-    },
-
     css: {
       src: 'sass',
       dest: 'assets/css',
