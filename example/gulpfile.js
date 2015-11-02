@@ -15,24 +15,22 @@ require('custom-task-name')
 // Initialize Fannypack
 Fannypack(function(config){
 
-  // Override config options...
-  config.root = {
-    src: './src',
-    dest: './dest'
-  }
+// Override config options...
+Fannypack.Config.root = {
+  src: './src',
+  dest: './build'
+}
 
-  // Turn off tasks
-  config.tasks.cordova = false
+// Turn off tasks
+Fannypack.Config.tasks.cordova = false
 
-  // Add new config definitions
-  config.tasks.custom = {
-    src: 'custom', // relative to root.src
-    dest: 'output', // relative to root.dest
-    extensions: ['js', 'coffee'] // extensions to notice
-    // ...
-  }
+// Add new config definitions
+Fannypack.Config.tasks.custom = {
+  src: 'custom', // relative to root.src
+  dest: 'output', // relative to root.dest
+  extensions: ['js', 'coffee'] // extensions to notice
+  // ...
+}
 
-  // Return the final object
-  return config
-
-})
+// Initialize
+Fannypack.init()
