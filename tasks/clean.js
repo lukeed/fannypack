@@ -4,13 +4,12 @@ var path   = require('path')
 var gutil  = require("gulp-util")
 
 module.exports = function(config){
+  var dest = config.root.dest
+  var files = [ path.join(dest, 'rev-manifest.json') ]
+
   gulp.task('clean', function (cb) {
-    var dest = config.root.dest
-
-    var files = [ path.join(dest, 'rev-manifest.json') ]
-
-    for(var key in config.tasks) {
-      var task = config.tasks[key]
+    for(var key in config) {
+      var task = config[key]
       task.dest = task.dest || './'
 
       if (!task) {
