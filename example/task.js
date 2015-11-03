@@ -2,25 +2,26 @@
  * Example custom task
  */
 
-var Fannypack        = require('fannypack')
-var gulp         = require('gulp')
+var gulp        = require('gulp')
+var Fannypack   = require('fannypack')
+var Pather      = Fannypack.$.Pather
+var Handler     = Fannypack.$.ErrorHandler
+var BrowserSync = Fannypack.$.BrowserSync
 
 // Addl Requirements
-var browserSync  = require('browser-sync')
-var handleErrors = require('../lib/handleErrors')
-var path         = require('path')
+var addl = require('gulp-addl-pkg')
 
 Fannypack.Tasks['custom'] = function(config){
   if(!config.custom) return
 
   var paths = {
-    src: path.join(config.root.src, config.custom.src, '/**/*.{' + config.custom.extensions + '}'),
-    dest: path.join(config.root.src, config.custom.dest)
+    src: Pather.join(config.root.src, config.custom.src, '/**/*.{' + config.custom.extensions + '}'),
+    dest: Pather.join(config.root.src, config.custom.dest)
   }
 
   return gulp.src(paths.src)
     // do stuff
-    .on('error', handleErrors)
+    .on('error', Handler)
     .pipe(gulp.dest(paths.dest))
-    .pipe(browserSync.reload({stream:true}))
+    .pipe(BrowserSync.reload({stream:true}))
 }

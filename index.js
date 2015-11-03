@@ -12,6 +12,14 @@ var Fannypack = {}
 Fannypack.Config = require('./-config')
 Fannypack.Tasks = require('require-dir')('./tasks', {recurse: true})
 
+// Make Core Packages Available
+Fannypack.$ = {
+  BrowserSync: require('browser-sync'),
+  Changed: require('gulp-changed'),
+  ErrorHandler: require('./lib/handleErrors'),
+  Pather: require('path')
+}
+
 function runAllTasks(object, config) {
   for (var name in object) {
     if (typeof object[name] === 'function') {
