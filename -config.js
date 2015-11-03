@@ -67,12 +67,6 @@ module.exports = {
     files: []
   },
 
-  cordova: {
-    options: {},
-    plugins: [],
-    xml: []
-  },
-
   browsersync: {
     port: 3000, // will open to localhost:3000
     proxy: 'local.dev'
