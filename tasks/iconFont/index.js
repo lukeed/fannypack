@@ -9,13 +9,13 @@ module.exports = function(config){
   if(!config.iconFont) return
 
   var fontPath = path.join(config.root.dest, config.iconFont.dest)
-  var cssPath = path.join(config.root.dest, config.css.dest)
+  var cssPath = path.join(config.root.dest, config.sass.dest)
 
   var settings = {
     // name: package.name + ' icons',
     src: path.join(config.root.src, config.iconFont.src, '/*.svg'),
     dest: path.join(config.root.dest, config.iconFont.dest),
-    sassDest: path.join(config.root.src, config.css.src, config.iconFont.sassDest),
+    sassDest: path.join(config.root.src, config.sass.src, config.iconFont.sassDest),
     template: path.normalize('./gulp/tasks/iconFont/template.sass'),
     sassOutputName: '_icons.sass',
     fontPath: path.relative(cssPath, fontPath),

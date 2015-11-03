@@ -7,19 +7,19 @@ var autoprefixer = require('gulp-autoprefixer')
 var path         = require('path')
 
 module.exports = function(config){
-  if(!config.css) return
+  if(!config.sass) return
 
   var paths = {
-    src: path.join(config.root.src, config.css.src, '/**/*.{' + config.css.extensions + '}'),
-    dest: path.join(config.root.dest, config.css.dest)
+    src: path.join(config.root.src, config.sass.src, '/**/*.{' + config.sass.extensions + '}'),
+    dest: path.join(config.root.dest, config.sass.dest)
   }
 
-  gulp.task('css', function () {
+  gulp.task('sass', function () {
     return gulp.src(paths.src)
       .pipe(sourcemaps.init())
-      .pipe(sass(config.css.sass))
+      .pipe(sass(config.sass.sassOpts))
       .on('error', handleErrors)
-      .pipe(autoprefixer(config.css.autoprefixer))
+      .pipe(autoprefixer(config.sass.autoprefixer))
       .pipe(sourcemaps.write())
       .pipe(gulp.dest(paths.dest))
       .pipe(browserSync.reload({stream:true}))

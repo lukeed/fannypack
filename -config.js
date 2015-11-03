@@ -15,7 +15,7 @@ module.exports = {
     extensions: ['js']
   },
 
-  css: {
+  sass: {
     src: 'sass',
     dest: 'assets/css',
     watchTask: true,
@@ -23,7 +23,7 @@ module.exports = {
     autoprefixer: {
       browsers: ['last 3 version']
     },
-    sass: {
+    sassOpts: {
       indentedSyntax: true // Enable .sass syntax (.scss still works too)
     },
     extensions: ['sass', 'scss', 'css']
