@@ -28,6 +28,7 @@ Fannypack.Config.cordova = false
 Fannypack.Config.custom = {
   src: 'custom', // relative to root.src
   dest: 'output', // relative to root.dest
+  watch: true, // should this run in 'watch' task?
   extensions: ['js', 'coffee'] // extensions to notice
   // ...
 }

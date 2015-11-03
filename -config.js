@@ -16,6 +16,7 @@ module.exports = {
   css: {
     src: 'sass',
     dest: 'assets/css',
+    watch: true,
     autoprefixer: {
       browsers: ['last 3 version']
     },
@@ -28,6 +29,7 @@ module.exports = {
   html: {
     src: 'html',
     dest: './',
+    watch: true,
     htmlmin: {
       collapseWhitespace: true
     },
@@ -38,18 +40,21 @@ module.exports = {
   images: {
     src: 'img',
     dest: 'assets/img',
+    watch: true,
     extensions: ['jpg', 'png', 'svg', 'gif']
   },
 
   fonts: {
     src: 'fonts',
     dest: 'assets/fonts',
+    watch: true,
     extensions: ['woff2', 'woff', 'eot', 'ttf', 'svg']
   },
 
   iconFont: {
     src: 'icons',
     dest: 'assets/fonts',
+    watch: true,
     sassDest: 'base',
     extensions: ['woff2', 'woff', 'eot', 'ttf', 'svg']
   },
@@ -57,12 +62,14 @@ module.exports = {
   svgSprite: {
     src: 'img/sprites',
     dest: 'assets/img',
+    watch: true,
     extensions: ['svg']
   },
 
   vendor: {
     src: 'js',
     dest: 'assets/js/lib',
+    watch: true,
     extensions: ['js'],
     files: []
   },
