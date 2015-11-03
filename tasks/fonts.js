@@ -4,11 +4,11 @@ var gulp        = require('gulp')
 var path        = require('path')
 
 module.exports = function(config){
-  if(!config.tasks.fonts) return
+  if(!config.fonts) return
 
   var paths = {
-    src: path.join(config.root.src, config.tasks.fonts.src, '/**/*'),
-    dest: path.join(config.root.dest, config.tasks.fonts.dest)
+    src: path.join(config.root.src, config.fonts.src, '/**/*'),
+    dest: path.join(config.root.dest, config.fonts.dest)
   }
 
   gulp.task('fonts', function() {

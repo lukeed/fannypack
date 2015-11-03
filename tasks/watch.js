@@ -9,7 +9,7 @@ module.exports = function(config){
     var watchableTasks = ['tags', 'fonts', 'iconFont', 'images', 'svgSprite', 'css']
 
     watchableTasks.forEach(function(taskName) {
-      var task = config.tasks[taskName]
+      var task = config[taskName]
       if(task) {
         var filePattern = path.join(config.root.src, task.src, '**/*.{' + task.extensions.join(',') + '}')
         watch(filePattern, function() { gulp.start(taskName) })

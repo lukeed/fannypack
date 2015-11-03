@@ -6,16 +6,16 @@ var handleErrors     = require('../../lib/handleErrors')
 var path             = require('path')
 
 module.exports = function(config){
-  if(!config.tasks.iconFont) return
+  if(!config.iconFont) return
 
-  var fontPath = path.join(config.root.dest, config.tasks.iconFont.dest)
-  var cssPath = path.join(config.root.dest, config.tasks.css.dest)
+  var fontPath = path.join(config.root.dest, config.iconFont.dest)
+  var cssPath = path.join(config.root.dest, config.css.dest)
 
   var settings = {
     // name: package.name + ' icons',
-    src: path.join(config.root.src, config.tasks.iconFont.src, '/*.svg'),
-    dest: path.join(config.root.dest, config.tasks.iconFont.dest),
-    sassDest: path.join(config.root.src, config.tasks.css.src, config.tasks.iconFont.sassDest),
+    src: path.join(config.root.src, config.iconFont.src, '/*.svg'),
+    dest: path.join(config.root.dest, config.iconFont.dest),
+    sassDest: path.join(config.root.src, config.css.src, config.iconFont.sassDest),
     template: path.normalize('./gulp/tasks/iconFont/template.sass'),
     sassOutputName: '_icons.sass',
     fontPath: path.relative(cssPath, fontPath),
@@ -26,7 +26,7 @@ module.exports = function(config){
       fontName: 'icons',
       appendUnicode: true,
       normalize: false,
-      formats: config.tasks.iconFont.extensions
+      formats: config.iconFont.extensions
     }
   }
 

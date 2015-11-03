@@ -11,11 +11,11 @@ var handleErrors = require('../lib/handleErrors')
 var path         = require('path')
 
 Fannypack.Tasks['custom'] = function(config){
-  if(!config.tasks.custom) return
+  if(!config.custom) return
 
   var paths = {
-    src: path.join(config.root.src, config.tasks.custom.src, '/**/*.{' + config.tasks.custom.extensions + '}'),
-    dest: path.join(config.root.src, config.tasks.custom.dest)
+    src: path.join(config.root.src, config.custom.src, '/**/*.{' + config.custom.extensions + '}'),
+    dest: path.join(config.root.src, config.custom.dest)
   }
 
   return gulp.src(paths.src)

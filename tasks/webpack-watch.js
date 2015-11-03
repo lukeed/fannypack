@@ -5,7 +5,7 @@ var webpack       = require('webpack')
 var browserSync   = require('browser-sync')
 
 module.exports = function(config){
-  if(!config.tasks.js) return
+  if(!config.js) return
 
   gulp.task('webpack:watch', function(callback) {
     var initialCompile = false

@@ -8,6 +8,7 @@
 */
 
 var Fannypack = {}
+
 Fannypack.Config = require('./-config')
 Fannypack.Tasks = require('require-dir')('./tasks', {recurse: true})
 

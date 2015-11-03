@@ -5,16 +5,16 @@ var concat      = require('gulp-concat')
 var path        = require('path')
 
 module.exports = function(config){
-  if(!config.tasks.vendor) return
+  if(!config.vendor) return
 
   var paths = {
-    src: path.join(config.root.src, config.tasks.vendor.src),
-    dest: path.join(config.root.dest, config.tasks.vendor.dest)
+    src: path.join(config.root.src, config.vendor.src),
+    dest: path.join(config.root.dest, config.vendor.dest)
   }
 
   gulp.task('vendor', function() {
     // for each vendor mapping definition
-    config.tasks.vendor.files.forEach(function(def){
+    config.vendor.files.forEach(function(def){
       // run thru definitions' source files, create final 'source' array
       var source = def.source.map(function(s){
         return paths.src + '/' + s;

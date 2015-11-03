@@ -22,10 +22,10 @@ Fannypack.Config.root = {
 }
 
 // Turn off tasks
-Fannypack.Config.tasks.cordova = false
+Fannypack.Config.cordova = false
 
 // Add new config definitions
-Fannypack.Config.tasks.custom = {
+Fannypack.Config.custom = {
   src: 'custom', // relative to root.src
   dest: 'output', // relative to root.dest
   extensions: ['js', 'coffee'] // extensions to notice
