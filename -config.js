@@ -20,13 +20,19 @@ module.exports = {
     dest: 'assets/css',
     watchTask: true,
     codeTask: true,
-    autoprefixer: {
-      browsers: ['last 3 version']
-    },
-    sassOpts: {
+    options: {
       indentedSyntax: true // Enable .sass syntax (.scss still works too)
     },
     extensions: ['sass', 'scss', 'css']
+  },
+
+  less: {
+    src: 'less',
+    dest: 'assets/css',
+    watchTask: true,
+    codeTask: true,
+    options: {},
+    extensions: ['less']
   },
 
   html: {
@@ -98,5 +104,9 @@ module.exports = {
       join_vars: true,
       drop_console: true // was JUST this
     }
-  }
+  },
+
+  autoprefixer: {
+    browsers: ['last 3 version']
+  },
 }
