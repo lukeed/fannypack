@@ -7,7 +7,7 @@
   automatically required below.
 */
 
-var Fannypack = require('fannypack').init
+var Fannypack = require('fannypack')
 
 // load custom tasks
 require('custom-task-name')
