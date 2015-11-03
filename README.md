@@ -7,7 +7,7 @@ This makes Fannypack a preferred choice for both beginner and advanced front-end
 
 - [Features](#features)
 - [Installation](#installation)
-  - [Node](#node.js)
+  - [Node](#nodejs)
   - [Getting Tools](#getting-tools)
   - [Script Commands](#script-commands)
 - [Usage](#usage)
