@@ -14,10 +14,12 @@ Fannypack.Tasks = require('require-dir')('./tasks', {recurse: true})
 
 // Make Core Packages Available
 Fannypack.$ = {
+  Autoprefix: require('gulp-autoprefixer'),
   BrowserSync: require('browser-sync'),
   Changed: require('gulp-changed'),
   ErrorHandler: require('./lib/handleErrors'),
-  Pather: require('path')
+  Pather: require('path'),
+  SourceMaps: require('gulp-sourcemaps')
 }
 
 function runAllTasks(object, config) {

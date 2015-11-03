@@ -26,15 +26,6 @@ module.exports = {
     extensions: ['sass', 'scss', 'css']
   },
 
-  less: {
-    src: 'less',
-    dest: 'assets/css',
-    watchTask: true,
-    codeTask: true,
-    options: {},
-    extensions: ['less']
-  },
-
   html: {
     src: 'html',
     dest: './',
