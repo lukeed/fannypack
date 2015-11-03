@@ -4,6 +4,10 @@
   "description": "The tool belt for front-end developers",
   "license": "MIT",
   "main": "index.js",
+  "engines": {
+    "node": "0.12.2",
+    "npm": "2.7.4"
+  },
   "scripts": {
     "deploy": "gulp deploy",
     "production": "gulp build:production",
@@ -31,9 +35,10 @@
     "babel",
     "sass"
   ],
+  "homepage": "https://github.com/lukeed/fannypack",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lukeed/fannypack.git"
+    "url": "git://github.com/lukeed/fannypack.git"
   },
   "dependencies": {
     "babel-core": "^5.8.3",
@@ -89,15 +94,5 @@
     "require-dir": "^0.3.0",
     "vinyl-source-stream": "~1.1.0",
     "webpack": "^1.10.1"
-  },
-  "readme": "# fannypack\nThe tool belt for front-end developers\n",
-  "readmeFilename": "README.md",
-  "bugs": {
-    "url": "https://github.com/lukeed/fannypack/issues"
-  },
-  "homepage": "https://github.com/lukeed/fannypack#readme",
-  "_id": "fannypack@0.1.0",
-  "_shasum": "3dffe9363617c1ea773e76f33bbdf0abf1e422b6",
-  "_resolved": "file:../fannypack/fannypack-0.1.0.tgz",
-  "_from": "fannypack@>=0.1.0 <0.2.0"
+  }
 }
