@@ -8,15 +8,18 @@ module.exports = {
   js: {
     src: 'js',
     dest: 'assets/js',
-    extractSharedJs: false,
     entries: {},
+    watchTask: false, // handled by default
+    codeTask: true,
+    extractSharedJs: false,
     extensions: ['js']
   },
 
   css: {
     src: 'sass',
     dest: 'assets/css',
-    watch: true,
+    watchTask: true,
+    codeTask: true,
     autoprefixer: {
       browsers: ['last 3 version']
     },
@@ -29,7 +32,8 @@ module.exports = {
   html: {
     src: 'html',
     dest: './',
-    watch: true,
+    watchTask: true,
+    codeTask: true,
     htmlmin: {
       collapseWhitespace: true
     },
@@ -40,38 +44,43 @@ module.exports = {
   images: {
     src: 'img',
     dest: 'assets/img',
-    watch: true,
+    watchTask: true,
+    assetTask: true,
     extensions: ['jpg', 'png', 'svg', 'gif']
   },
 
   fonts: {
     src: 'fonts',
     dest: 'assets/fonts',
-    watch: true,
+    watchTask: true,
+    assetTask: true,
     extensions: ['woff2', 'woff', 'eot', 'ttf', 'svg']
   },
 
   iconFont: {
     src: 'icons',
+    sassDest: 'base', // within 'src'
     dest: 'assets/fonts',
-    watch: true,
-    sassDest: 'base',
+    watchTask: true,
+    assetTask: true,
     extensions: ['woff2', 'woff', 'eot', 'ttf', 'svg']
   },
 
   svgSprite: {
     src: 'img/sprites',
     dest: 'assets/img',
-    watch: true,
+    watchTask: true,
+    assetTask: true,
     extensions: ['svg']
   },
 
   vendor: {
     src: 'js',
     dest: 'assets/js/lib',
-    watch: true,
-    extensions: ['js'],
-    files: []
+    files: [],
+    watchTask: true,
+    codeTask: true,
+    extensions: ['js']
   },
 
   browsersync: {

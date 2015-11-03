@@ -9,7 +9,7 @@ module.exports = function(config){
 
     var watchable = [];
     for (var name in config) {
-      if (config[name].watch) {
+      if (config[name].watchTask) {
         watchable.push(name)
       }
     }
