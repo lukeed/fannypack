@@ -362,6 +362,7 @@ Fannypack.Tasks['images'] = function(config){
 
 ### Publishing Tasks
 In order to [publish an NPM package](https://docs.npmjs.com/getting-started/publishing-npm-packages):
+
 1. Create a new directory with the name of your task. (Recommended: begin with 'fannypack')
 2. Move task logic into a new `index.js` file
 3. Create a new `package.json` file, with the following required fields:
