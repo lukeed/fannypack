@@ -1,6 +1,6 @@
 {
   "name": "fannypack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The tool belt for front-end developers",
   "license": "MIT",
   "main": "index.js",
@@ -27,15 +27,16 @@
     "build",
     "stream",
     "make",
-    "tool",
+    "build tools",
     "toolkit",
-    "asset",
-    "pipeline",
-    "front-end",
+    "asset pipeline",
+    "front end",
     "gulp",
     "webpack",
     "babel",
-    "sass"
+    "sass",
+    "laravel",
+    "elixir"
   ],
   "homepage": "https://github.com/lukeed/fannypack",
   "repository": {
