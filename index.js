@@ -17,8 +17,10 @@ Fannypack.$ = {
   Autoprefix: require('gulp-autoprefixer'),
   BrowserSync: require('browser-sync'),
   Changed: require('gulp-changed'),
+  Concat: require('gulp-concat'),
   ErrorHandler: require('./lib/handleErrors'),
   Pather: require('path'),
+  Sequence: require('gulp-sequence'),
   SourceMaps: require('gulp-sourcemaps')
 }
 
