@@ -28,7 +28,7 @@ This makes Fannypack a preferred choice for both beginner and advanced front-end
   - [Extending Tasks](#extending-tasks)
   - [Publishing Tasks](#publishing-tasks)
 
-<!-- - [Starter Kit](#starter) -->
+- [Starter Kit](https://github.com/lukeed/fannypack-starter-html)
 - [Browse Plugins](https://www.npmjs.com/search?q=fannypack)
 
 
