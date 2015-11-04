@@ -10,10 +10,8 @@
 var Fannypack = require('fannypack')
 
 // load custom tasks
-require('custom-task-name')
-
-// Initialize Fannypack
-Fannypack(function(config){
+require('npm-sourced-task')
+require('./path/to/local/task')
 
 // Override config options...
 Fannypack.Config.root = {

@@ -8,11 +8,12 @@
     "version": "gulp rev uglify",
     "development": "gulp",
     "watch": "gulp webpack:watch watch",
-    "test": "gulp build:production && karma start --single-run"
+    "karma": "./node_modules/fannypack/node_modules/.bin/karma",
+    "tests": "npm run production && npm run karma start --single-run"
   },
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.0",
-    "fannypack": "^0.1.0"
+    "fannypack": "^1.0.0"
   }
 }
