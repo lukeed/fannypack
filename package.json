@@ -9,12 +9,14 @@
     "npm": "2.7.4"
   },
   "scripts": {
+    "gulp": "gulp",
     "deploy": "gulp deploy",
     "production": "gulp build:production",
+    "version": "gulp rev uglify",
     "development": "gulp",
-    "gulp": "gulp",
     "watch": "gulp webpack:watch watch",
-    "test": "gulp build:production && karma start --single-run"
+    "karma": "./node_modules/fannypack/node_modules/.bin/karma",
+    "tests": "npm run production && npm run karma start --single-run"
   },
   "author": {
     "name": "Luke Edwards",
