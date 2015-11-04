@@ -1,6 +1,6 @@
 {
   "name": "fannypack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The tool belt for front-end developers",
   "license": "MIT",
   "main": "index.js",
@@ -23,7 +23,7 @@
     "email": "luke@lukeed.com",
     "url": "http://www.lukeed.com"
   },
-  "tags": [
+  "keywords": [
     "build",
     "stream",
     "make",
