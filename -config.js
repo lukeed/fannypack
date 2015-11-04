@@ -71,10 +71,10 @@ module.exports = {
     extensions: ['svg']
   },
 
-  vendor: {
+  concat: {
     src: 'js',
     dest: 'assets/js/lib',
-    files: [],
+    entries: {}, // {'bundle.js': ['./src1.js', './path/src2.js']}
     watchTask: true,
     codeTask: true,
     extensions: ['js']
