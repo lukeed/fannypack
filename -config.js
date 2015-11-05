@@ -80,6 +80,10 @@ module.exports = {
     extensions: ['js']
   },
 
+  clean: {
+    ignores: []
+  },
+
   browsersync: {
     port: 3000, // will open to localhost:3000
     proxy: 'local.dev'
