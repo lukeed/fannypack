@@ -43,6 +43,7 @@ module.exports = {
     dest: 'assets/img',
     watchTask: true,
     assetTask: true,
+    flatten: true,
     extensions: ['jpg', 'png', 'svg', 'gif']
   },
 
