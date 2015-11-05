@@ -89,7 +89,7 @@ OR --- If you do not have a `package.json` file, you can [run a NPM command](htt
   "private": true,
   "devDependencies": {
     "gulp": "^3.9.0",
-    "fannypack": "^0.9.0"
+    "fannypack": "^1.0.0"
   }
 }
 ```
