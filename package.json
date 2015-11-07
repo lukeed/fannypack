@@ -1,6 +1,6 @@
 {
   "name": "fannypack",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The tool belt for front-end developers",
   "license": "MIT",
   "main": "index.js",
