@@ -7,7 +7,7 @@ var revNapkin = require('gulp-rev-napkin');
 module.exports = function(config){
   gulp.task('rev-assets', function() {
     // Ignore files that may reference assets. We'll rev them next.
-    var ignoreThese = '!' + path.join(config.root.dest,'/**/*+(css|js|json|html|php)')
+    var ignoreThese = '!' + path.join(config.root.dest,'/**/*+(json|html|php)')
 
     return gulp.src([path.join(config.root.dest,'/**/*'), ignoreThese])
       .pipe(rev())
