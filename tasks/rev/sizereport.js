@@ -1,6 +1,14 @@
 var gulp         = require('gulp')
-var repeatString = require('../../lib/repeatString')
 var sizereport   = require('gulp-sizereport')
+
+function repeatString(pattern, number){
+  var string = ''
+  while (number > 0){
+    number--
+    string += pattern
+  }
+  return string
+}
 
 // 6) Report sizes
 module.exports = function(config){
