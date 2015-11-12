@@ -2,13 +2,14 @@
 ![Fannypack](fannypack.jpg)
 
 # Fannypack
-The tool belt for front-end developers
+> The tool belt for front-end developers
 
 Fannypack is a lean, lightning-fast build system that suits any application. Fannypack comes packaged with several common CSS and JavaScript pre-processors. It's also extremely simple to add, customize, or override any task or setting.
 
 This makes Fannypack a preferred choice for both beginner and advanced front-end developers.
 
 - [Features](#features)
+- [Planned Features](#planned-features)
 - [Installation](#installation)
   - [Node](#nodejs)
   - [Getting Tools](#getting-tools)
@@ -27,7 +28,9 @@ This makes Fannypack a preferred choice for both beginner and advanced front-end
   - [Overwriting Tasks](#overwriting-tasks)
   - [Extending Tasks](#extending-tasks)
   - [Publishing Tasks](#publishing-tasks)
+- [Changelog](https://github.com/lukeed/fannypack/blob/master/CHANGELOG.md)
 
+**Fannypack Goodies:**
 - [Starter Kit](https://github.com/lukeed/fannypack-starter-html)
 - [Browse Plugins](https://www.npmjs.com/search?q=fannypack)
 
@@ -37,18 +40,19 @@ This makes Fannypack a preferred choice for both beginner and advanced front-end
   - Indented, SCSS, or both
   - Libsass (node-sass) for super fast compiles
   - CSS Autoprefixer
-- **JS:**
+- **BrowserSync:**
+  - Immediately & Automatically re-compiles files and refreshes your browser window(s).
+  - Allows you to connect & test multiple devices at once
+  - ([Learn More](http://www.browsersync.io/))
+- **ES6/ES2015 Support:**
   - Supports ES6 Modules (via [Babel](http://babeljs.io/) and [Webpack](http://webpack.github.io/))
   - Multiple bundles
   - Shared code extraction
   - Source Mapping
-- **HTML**:
+- **HTML Pre-Processor**:
   - Static templating with [Nunjucks](https://mozilla.github.io/nunjucks/) and [gulp-data](https://github.com/colynb/gulp-data)
-- **Images:**
-  - **SVG Sprites**: Compiles a spritesheet from a folder of SVGs
-  - Compression with image-min
-- **Fonts:**
-  - Generate an **Icon Font:** from a folder of SVGs
+- **Concatenation:**
+  - Combine multiple files into a new output file
 - **Development Mode:**
   - File Watching and Live Reloading with [BrowserSync](http://www.browsersync.io/)
   - Source Mapping
@@ -63,6 +67,21 @@ This makes Fannypack a preferred choice for both beginner and advanced front-end
   - Travis CI integration
 - **Deployment Support:**
   - Wrap custom deploy logic into an easy-to-use task
+
+## Planned Features
+
+These are [Fannypack plugins](https://www.npmjs.com/search?q=fannypack) that are planned and on their way soon!
+
+- [ ] Coffeescript
+- [ ] PHP TDD Test Runner + Watcher
+- [ ] Angular TemplateCache
+- [ ] React JSX Compile
+- [x] [Stylus](https://www.npmjs.com/package/fannypack-stylus)
+- [x] [LESS](https://www.npmjs.com/package/fannypack-less)
+- [x] [Riot JS Tags](https://www.npmjs.com/package/fannypack-riot-tags)
+- [x] [Image Minification](https://www.npmjs.com/package/fannypack-images)
+- [x] [Generate an IconFont](https://www.npmjs.com/package/fannypack-iconfont) from multiple SVG files
+- [x] [Generate a single SVG sprite (compressed)](https://www.npmjs.com/package/fannypack-svgsprite) from multiple SVG files
 
 
 ## Installation
