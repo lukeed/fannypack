@@ -234,7 +234,7 @@ You may place all your tests within: `./src/js/__tests__`.
 If you prefer keeping everything modular, you may also do:
 `./src/js/modules/chat/__test__`. This may be done instead of or in addition to the setup above.
 
-Once you've made and placed your Karma tests, run: `npm run tests`
+Once you've made and placed your Karma tests, run: `npm run test`
 OR --- If you do not have [Fannypack's Scripts installed](#script-commands), run:
 ```bash
 gulp build:production && ./node_modules/fannypack/node_modules/.bin/karma start --single-run
