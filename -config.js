@@ -38,38 +38,12 @@ module.exports = {
     // watchOther: './app/views/*/**.html'
   },
 
-  images: {
-    src: 'img',
-    dest: 'assets/img',
-    watchTask: true,
-    assetTask: true,
-    flatten: true,
-    extensions: ['jpg', 'png', 'svg', 'gif']
-  },
-
   fonts: {
     src: 'fonts',
     dest: 'assets/fonts',
     watchTask: true,
     assetTask: true,
     extensions: ['woff2', 'woff', 'eot', 'ttf', 'svg']
-  },
-
-  iconFont: {
-    src: 'icons',
-    sassDest: 'base', // within 'src'
-    dest: 'assets/fonts',
-    watchTask: true,
-    assetTask: true,
-    extensions: ['woff2', 'woff', 'eot', 'ttf', 'svg']
-  },
-
-  svgSprite: {
-    src: 'img/sprites',
-    dest: 'assets/img',
-    watchTask: true,
-    assetTask: true,
-    extensions: ['svg']
   },
 
   concat: {

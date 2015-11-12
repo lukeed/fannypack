@@ -19,9 +19,11 @@ Fannypack.$ = {
   Changed: require('gulp-changed'),
   Concat: require('gulp-concat'),
   ErrorHandler: require('./lib/handleErrors'),
+  If: require('gulp-if'),
   Pather: require('path'),
   Sequence: require('gulp-sequence'),
-  SourceMaps: require('gulp-sourcemaps')
+  SourceMaps: require('gulp-sourcemaps'),
+  Util: require('gulp-util')
 }
 
 function runAllTasks(object, config) {
