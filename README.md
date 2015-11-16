@@ -2,11 +2,11 @@
 ![Fannypack](fannypack.jpg)
 
 # Fannypack
-> The tool belt for front-end developers
+> The tool belt for front-end developers.
 
-Fannypack is a lean, lightning-fast build system that suits any application. Fannypack comes packaged with several common CSS and JavaScript pre-processors. It's also extremely simple to add, customize, or override any task or setting.
+Fannypack is a lean, lightning-fast build system that suits any application. 
 
-This makes Fannypack a preferred choice for both beginner and advanced front-end developers.
+It comes packaged with several common CSS and JavaScript pre-processors. It's also extremely simple to add, customize, or override any task or setting. This makes Fannypack a preferred choice for both beginner and advanced front-end developers.
 
 - [Features](#features)
 - [Planned Features](#planned-features)
