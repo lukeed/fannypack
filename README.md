@@ -74,7 +74,7 @@ These are [Fannypack plugins](https://www.npmjs.com/search?q=fannypack) that are
 
 - [ ] Coffeescript
 - [ ] PHP TDD Test Runner + Watcher
-- [ ] Angular TemplateCache
+- [x] [Angular TemplateCache](https://www.npmjs.com/package/fannypack-angular-templatecache)
 - [ ] React JSX Compiler
 - [x] [Stylus](https://www.npmjs.com/package/fannypack-stylus)
 - [x] [LESS](https://www.npmjs.com/package/fannypack-less)
