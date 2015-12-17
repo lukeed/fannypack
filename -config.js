@@ -41,6 +41,7 @@ module.exports = {
   fonts: {
     src: 'fonts',
     dest: 'assets/fonts',
+    flatten: false,
     watchTask: true,
     assetTask: true,
     extensions: ['woff2', 'woff', 'eot', 'ttf', 'svg']
