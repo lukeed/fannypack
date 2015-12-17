@@ -19,6 +19,7 @@ Fannypack.$ = {
   Changed: require('gulp-changed'),
   Concat: require('gulp-concat'),
   ErrorHandler: require('./lib/handleErrors'),
+  Flatten: require('gulp-flatten'),
   If: require('gulp-if'),
   Pather: require('path'),
   Render: require('gulp-nunjucks-render'),
