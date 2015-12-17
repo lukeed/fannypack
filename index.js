@@ -21,6 +21,7 @@ Fannypack.$ = {
   ErrorHandler: require('./lib/handleErrors'),
   If: require('gulp-if'),
   Pather: require('path'),
+  Render: require('gulp-nunjucks-render'),
   Sequence: require('gulp-sequence'),
   SourceMaps: require('gulp-sourcemaps'),
   Util: require('gulp-util')
