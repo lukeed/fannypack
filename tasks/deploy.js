@@ -1,6 +1,4 @@
 var gulp    = require('gulp')
-var open    = require('open')
-var os      = require('os')
 // var package = require('../../package.json')
 var path    = require('path')
 
