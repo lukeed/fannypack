@@ -15,8 +15,7 @@
     "version": "gulp rev uglify",
     "development": "gulp",
     "watch": "gulp webpack:watch watch",
-    "karma": "./node_modules/fannypack/node_modules/.bin/karma",
-    "test": "npm run production && npm run karma start --single-run"
+    "test": "echo \"No tests specified.\""
   },
   "author": {
     "name": "Luke Edwards",
