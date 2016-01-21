@@ -4,7 +4,7 @@ var sass          = require('gulp-sass')
 var sourcemaps    = require('gulp-sourcemaps')
 var handleErrors  = require('../lib/handleErrors')
 var autoprefixer  = require('gulp-autoprefixer')
-var minify        = require('gulp-minify-css')
+var minify        = require('gulp-cssnano')
 var gulpif        = require('gulp-if')
 var path          = require('path')
 
