@@ -5,8 +5,8 @@
   "license": "MIT",
   "main": "index.js",
   "engines": {
-    "node": "0.12.2",
-    "npm": "2.7.4"
+    "node": ">=0.12.2",
+    "npm": ">=2.7.4"
   },
   "scripts": {
     "gulp": "gulp",
